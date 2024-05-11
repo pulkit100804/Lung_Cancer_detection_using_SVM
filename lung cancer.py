@@ -6,7 +6,7 @@ import warnings
 from sklearn.metrics import accuracy_score
 warnings.filterwarnings("ignore", message="X does not have valid feature names, but SVC was fitted with feature names")
 
-df = pd.read_csv("")
+df = pd.read_csv("survey_lung_cancer.csv")
 label_encoder = LabelEncoder()
 df['LUNG_CANCER'] = label_encoder.fit_transform(df['LUNG_CANCER'])
 df['GENDER'] = label_encoder.fit_transform(df['GENDER'])
